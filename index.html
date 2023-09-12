@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- This is the language the browser will read the page in; in this case the language is english (en) 
+        this is useful for screenreaders for those who have sight impairments. -->
+
+<head>
+    <!-- The head tag represents the the metadata (the machine readable information): title, scripts, stylesheet links etc. 
+        This is the information needed for machine processing, not human readability. -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!--These links are imported font styles from Google fonts, 
+        to be used in the style.css and master.css sheets for this html file.-->
+
+    <link rel="stylesheet" type="text/css" href="styles/master.css">
+    <link rel="stylesheet" type="text/css"  href="styles/style.css">
+    <link rel="icon" href="photos/favicon.ico" type="image/x-icon">
+    <!--These are the links to my style sheets for this html file, the master.css style sheet contains css code 
+        that is present on both html files.-->
+
+    <meta charset="UTF-8">
+    <!--This provides the character encoding used for the writing system. This guarantees that the material can be read and 
+        understood by users worldwide and it is shown consistently across various devices and platforms.-->
+
+    <title>My Daily Challenge</title>
+    <!--This is the title of my html page, which is displayed within the tab on the browser.-->
+</head>
+
+<body>
+    <!--The body is the container for our main content code of the webpage; it can contain elements like headings, paragraphs, 
+        images, tables etc. Everything we see on the web broswer will be present in the body tag.-->
+    <main>
+        <!--The main tag is an example of a semantic element, other examples are header and footer (you can see I have used a 
+            footer at the end of my code). They are used to clearly describe meaning to both the browser and reader by defining
+        different parts of the webpage.-->
+
+        <img src="/photos/trophy.png" alt="A winners badge">
+
+        
+        <!--This is an example of a <img> void tag (a self closing tag). There are two attributes defined here; the scr (links to
+            the external file where the image is saved) and the alt (alternative description - used as a back-up if the image fails
+            to load or for when a screen reader is in use). It is important to note that both these attributes need to be used on 
+            this tag for it validate.-->
+
+        <h1>Laura Firth <br>
+            <span class="title">#100DaysOfCode</span> Daily Challenge</h1> 
+        <!-- A <h1> element with a non-semantic inline element <span> tag nested within it. 
+            The h1 tag indicates the title of the webpage, h tags descend to 6, h1 representing the most important title and 
+            h6 the least important. 
+            
+            A <span> tag adds different properties (font weight, family, colour etc) to selected text within an element-->
+    
+        <p class="daily_challenge">Welcome to the start of my Learning Adventure in mastering the core aspects of Web Development 
+            using the artistry of HTML, CSS, and JavaScript! </p>
+        <!--A <p> element is an example of a block element meaning it occupies the full space of the page (whereas an inline 
+            element only occupies the space needed for its content). 
+            The <p> indicates a paragraph of text to the broswer, in this case I have used a class attribute to specifically call
+            this paragraph when adding styling and have given it a unique value-->
+    </main>
+    <footer>
+
+
+        <nav>
+            Explore my
+            <a href="/full_week">full week!</a>
+        </nav>
+
+
+        <!--In my page footer I have used a <nav> tag, containing an anchor (<a>) tag, this represents the part of the page 
+            that provides navigation links, either within the currennt document or to other documents.
+            
+            The <a> element creates a hyperlink to the other document, href is the attribute that specifies the URL of the 
+                page the link goes to-->
+    </footer>
+
+</body>
+</html>

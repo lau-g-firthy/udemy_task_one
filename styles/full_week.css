@@ -1,0 +1,51 @@
+h1{
+    font-size: 58px;
+    margin: 0;
+    color: rgb(22, 53, 87);
+}
+h2{
+    margin: 4px;
+    font-family: 'Bebas Neue';
+    color: rgb(82, 113, 255);
+    font-size: 32px;
+}
+/* This <h2> is nested within my <li> tags */
+
+.description{
+    color: rgb(255, 87, 87);
+    font-family:'Lobster';
+    font-size: 28px;
+    font-weight: bold;
+    margin: 12px;
+}
+/* - The font weight property can apply various values that change a partictular aspect of the font style. 
+    - The font size allows us to alter the overall size of our font. */
+
+.daily-goal{
+    margin: 4px;
+}
+/* The .daily-goal class defines each <p> within my <li> tags, the colours and font decoration do not need defining here because 
+    they are aleady defined in the ancestor <ol> tag. */
+
+ol{
+    list-style: none;
+    padding: 0;
+    font-family:'Roboto Condensed';
+    font-weight: bold;
+    font-size: 16px;
+}
+/* list-style: because the browser will default our ordered list to a numerical order style, I have changed the value to none
+    so that the numerical values are no longer present on the webpage. */
+
+li{
+    border:rgb(22, 53, 87) 4px solid;
+    width: 800px;
+    margin: 36px auto 0 auto;
+    padding: 0;
+    background-color: rgb(253, 252, 239);
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(22, 53, 87, 0.5);
+}
+footer{
+    margin-bottom: 25px;
+}

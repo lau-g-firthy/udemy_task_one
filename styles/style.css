@@ -1,0 +1,53 @@
+
+main{
+    width: 800px;
+    margin: 150px auto 72px auto;
+    padding: 15px 5px 0 5px;
+    border: 4px solid rgb(22, 53, 87);
+    border-radius: 50px;
+    box-shadow: 1px 2px 8px rgba(22, 53, 87);
+    background-color: rgb(253, 252, 239);
+}
+
+/* This is styling for the <main> semantic element in my <body> 
+    - Top tip: When we alter the width of content, it will offcenter, to override this we need to change the padding to 0.
+
+    - Box shadow: A box shadow attaches one or more shadows to an element between the border and the margin (in this case all 
+    the content in the main semantic element). Its values are horizontal (x axcel) offset, vertical (y axcel) offset, 
+    blur (optional), spread (optional), and colour. Note, there is one extra value in the colour used for intensity of the colour 
+    ranging from 0 - 1; the higher the value the blurrier it becomes. */
+
+img{
+    width: 200px;
+    height: auto;
+    border: 4px solid rgb(22, 53, 87);
+    border-radius: 100px;
+    margin-top: -123px;
+}
+
+/* Margin top: Here I want to talk about negative margins, when we use margin top or margin left properties, it will draw our 
+    target element closer to its top or left neighbor respectively. This is what pulls my image out from the main body upwards 
+    by half the image length. Steps to do this:
+    1. border size (4px) + image size (200px) = 204px
+    2. divide total by 2 = 102px (this is your negative margin) 
+        If we use negative values with margin bottom or margin right properties, it will pull the neighboring elements closer to
+        our target elements. */
+
+h1{
+    font-size: 58px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title{
+    color: rgb(82, 113, 255);
+}
+/* This is the the calling for the non sematic inline element nested within our <h1> element. */
+
+.daily_challenge{
+    color: rgb(255, 87, 87);
+    font-weight: normal;
+    font-family:'Lobster';
+    font-size: 28px;
+}
+/* This is how we call a class attribute in css using a period (.) followed by the unique value I've given it in the html file */

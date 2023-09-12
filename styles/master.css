@@ -1,0 +1,57 @@
+/* This is our master.css styling page where we define the properties of our css selectors and pseudo selectors. 
+    Each property is given specific values (font types, colours, sizes etc).*/
+
+body{
+    text-align: center;
+    background-color: rgb(180, 247, 250);
+    margin: 50px auto 0 auto;
+}
+/* - The text align property specifies the horizontal alignment of text within an element, here I have set the value to center 
+    meaning the contents on my webpages will be centered.
+    - The background colour property means I can add a rgb value to change the colour of my webpages.
+    - The margin property is the outer layer of the css box model. By changing the values in this property it allows me to assign 
+    the distance between the top, right, bottom, and left of the page.*/
+
+h1{
+    font-family: 'Bebas Neue';
+    color: rgb(22, 53, 87);
+}
+/* - The font-family property and its value. Here I have pulled a font value from my imported fonts from Google fonts that are 
+    present on my html files.*/
+p{
+    color: rgb(38, 90, 146);
+    font-weight:lighter;
+    font-family:'Roboto Condensed';
+    font-size: 24px;
+}
+nav{
+    width: 400px;
+    background-color: rgb(247, 215, 49);
+    border: rgb(22, 53, 87) solid;
+    border-radius:200px;
+    margin: 36px auto 0 auto;
+    padding: 2px 0 2px 0;
+    font-family:'Roboto Condensed';
+    font-size: 18px;
+    color: rgb(22, 53, 87);
+}
+/* - Width: This is represents the width of the contents in the css box model
+    - Boarder: this property allows us to add a border around our content and padding, it has three core values described,
+    the color, width, and the line type (dashed, solid, double, dotted etc).
+    - Border-radius: This curves the edges of the border
+    - Padding: padding exists between the content and border and is used to create space around the contents, like margin we can
+    add size description to the top, right, bottom, and left values */
+
+a{
+    color: rgb(255, 87, 87);
+    text-decoration: none;
+}
+/* With <a> tags the browser will automatically set default styling if you choose not to add your own. 
+    - Text decoration: I've added the value none, to remove the automatic settings the browsers provides for this tag */
+
+a:hover{
+    text-decoration: underline;
+}
+/* - This is a pseudo selector expressed by adding a colon (:) after a selector, followed by a pseudo-class (in this case 
+    'hover'). This means when you hover over the <a> tag in the webpage the value underline will display - this helps the user
+    identify that this is a link that can be interacted with. */
